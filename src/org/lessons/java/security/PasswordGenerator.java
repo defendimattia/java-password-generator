@@ -19,15 +19,15 @@ public class PasswordGenerator {
         String color = in.nextLine();
 
         System.out.println("Giorno di nascita");
-        int dayBirth = in.nextInt();
+        int birthDay = in.nextInt();
 
         System.out.println("Mese di nascita");
-        int monthBirth = in.nextInt();
+        int birthMonth = in.nextInt();
 
         System.out.println("Anno di nascita");
-        int ageBirth = in.nextInt();
+        int birthYear = in.nextInt();
 
-        String password = name + "-" + surname + "-" + color + "-" + (dayBirth + monthBirth + ageBirth);
+        String password = name + "-" + surname + "-" + color + "-" + (birthDay + birthMonth + birthYear);
         System.out.println("La tua password è: " + password);
     }
 }
